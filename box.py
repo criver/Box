@@ -377,7 +377,7 @@ class Box(dict):
         return list(items)
 
     def __contains__(self, item):
-        return dict.__contains__(self, item) or hasattr(self, item)
+        return dict.__contains__(self, item)
 
     def copy(self):
         return self.__class__(super(self.__class__, self).copy())
